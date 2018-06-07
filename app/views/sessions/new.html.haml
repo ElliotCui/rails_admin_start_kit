@@ -1,0 +1,23 @@
+.row
+  .content-wrapper.full-page-wrapper.d-flex.align-items-center.auth
+    .row.w-100
+      .col-lg-8.mx-auto
+        .row
+          .col-lg-12.bg-white
+            .auth-form-light.text-left.p-5
+              %h2 Login
+              %h4.font-weight-light Hello! let's get started
+              %form.pt-5
+              %form{:action => login_path, :method => "post", :name => "login-form"}
+                .form-group
+                  %label{:for => "email"} Email
+                  %input.form-control{"aria-describedby" => "emailHelp", :placeholder => "Username", :type => "email", :id => "email", :name => "email"}/
+                  %i.mdi.mdi-account
+                .form-group
+                  %label{:for => "password"} Password
+                  %input.form-control{:placeholder => "Password", :type => "password", :password => "password", :name => "password"}/
+                  %i.mdi.mdi-eye
+                .mt-5
+                  %button.btn.btn-lg.btn-success.btn-block{:name => "Submit", :type => "Submit", :value => "Login"} 登录
+            %p.text-white.font-weight-medium.text-center.flex-grow.align-self-end Copyright © 2018  All rights reserved.
+  / content-wrapper ends

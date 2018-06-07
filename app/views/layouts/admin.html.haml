@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title RailsAdminStartKit
+    = csrf_meta_tags
+    = stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'admin', 'data-turbolinks-track': 'reload'
+  %body.sidebar-fixed
+    .container-scroller
+      = render "nav_bar"
+      .container-fluid.page-body-wrapper
+        = render "side_bar"
+        = render "body"
+        = render "footer"
+
+:javascript
+  console.log
+  $('#logout').on('click', function(){
+    $.ajax({ url: "#{logout_path}", method: 'delete' });
+  });

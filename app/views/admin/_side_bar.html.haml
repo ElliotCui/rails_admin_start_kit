@@ -1,0 +1,53 @@
+%nav#sidebar.sidebar.sidebar-offcanvas
+  %ul.nav
+    %li.nav-item.nav-category
+      %span.nav-link GENERAL
+    %li.nav-item
+      %a.nav-link{:href => "#"}
+        %span.menu-title Dashboard
+        %i.fa.fa-dashboard
+      #page-layouts.collapse
+        %ul.nav.flex-column.sub-menu
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu1
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu2
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu3
+    %li.nav-item
+      %a.nav-link{"aria-controls" => "sidebar-layouts", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#sidebar-layouts"}
+        %span.menu-title Market Value
+        %i.fa.fa-bar-chart-o
+      #sidebar-layouts.collapse
+        %ul.nav.flex-column.sub-menu
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu1
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu2
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu3
+    %li.nav-item.nav-category
+      %span.nav-link Trades
+    %li.nav-item
+      %a.nav-link{"aria-controls" => "ui-basic", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#ui-basic"}
+        %span.menu-title Orders
+        %i.fa.fa-list
+      #ui-basic.collapse
+        %ul.nav.flex-column.sub-menu
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu1
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu2
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu3
+      %a.nav-link{"aria-controls" => "ui-basic", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#ui-basic"}
+        %span.menu-title Tactics
+        %i.fa.fa-gavel
+      #ui-basic.collapse
+        %ul.nav.flex-column.sub-menu
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu1
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu2
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu3

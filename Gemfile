@@ -13,13 +13,18 @@ gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.1.1'
+gem 'haml'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+gem "bcrypt-ruby", :require => "bcrypt"
+gem 'will_paginate-bootstrap', '~> 1.0.1'
+gem "font-awesome-rails"
+# gem "paranoia", "~> 2.2"
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-rails', '~> 0.3.4'
 end
 
 group :development do

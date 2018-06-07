@@ -1,0 +1,34 @@
+%nav.navbar.col-lg-12.col-12.p-0.fixed-top.d-flex.flex-row
+  .text-center.navbar-brand-wrapper
+    %a.navbar-brand{:href => root_path} Admin
+  .navbar-menu-wrapper.d-flex.align-items-center
+    %button.navbar-toggler.navbar-toggler.d-none.d-lg-block.align-self-center.mr-2{"data-toggle" => "minimize", :type => "button"}
+      %span.icon-list.icons
+    %p.page-name.d-none.d-lg-block= "Hi, #{current_user.name}"
+    %ul.navbar-nav.ml-lg-auto
+      %li.nav-item.dropdown.mail-dropdown
+        %a#MailDropdown.nav-link.count-indicator{"data-toggle" => "dropdown", :href => "#"} 管理
+        .dropdown-menu.navbar-dropdown.mail-notification.dropdownAnimation{"aria-labelledby" => "MailDropdown"}
+          %a.dropdown-item{:href => admin_super_user_path(current_user)}
+            .sender-img
+              %span.menu-title
+              %i.fa.fa-id-card
+            .sender
+              %p.Sende-name 个人信息
+              %p.Sender-message 查看个人信息
+          %a.dropdown-item{:href => admin_super_users_path}
+            .sender-img
+              %span.menu-title
+              %i.fa.fa-users
+            .sender
+              %p.Sende-name 管理员
+              %p.Sender-message 查看所有管理员
+          %a.dropdown-item{:id => 'logout', :href => "#"}
+            .sender-img
+              %span.menu-title
+              %i.fa.fa-sign-out
+            .sender
+              %p.Sende-name{style: "color:darksalmon"} 退出
+              %p.Sender-message 退出登录
+    %button.navbar-toggler.navbar-toggler-right.d-lg-none.align-self-center.ml-auto{"data-toggle" => "offcanvas", :type => "button"}
+      %span.icon-menu.icons
