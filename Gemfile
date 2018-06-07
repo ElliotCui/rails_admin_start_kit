@@ -9,19 +9,19 @@ gem 'rails', '~> 5.1.6'
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 gem 'puma', '~> 3.7'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.1.1'
-gem 'haml'
+gem 'haml', '~> 5.0.4'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'will_paginate-bootstrap', '~> 1.0.1'
-gem "font-awesome-rails"
-# gem "paranoia", "~> 2.2"
+gem "font-awesome-rails", '~> 4.7.0.4'
+gem 'colorize', '~> 0.8.1'
 
 group :development, :test do
   gem 'pry-rails', '~> 0.3.4'
