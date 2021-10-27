@@ -1,4 +1,6 @@
-# RailsAdminStartKit
+# RailsAdminStartKit(Outdated)
+
+WARN: If You Want An Scaffold to Build Rails Admin, Please check this [Repo](https://github.com/ElliotCui/admin_start_kit).
 
 Start kit for admin using rails and stellar.
 
