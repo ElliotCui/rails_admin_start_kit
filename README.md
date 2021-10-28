@@ -1,11 +1,12 @@
 # RailsAdminStartKit(Outdated)
 
-WARN: If You Want An Scaffold to Build Rails Admin, Please check this [Repo](https://github.com/ElliotCui/admin_start_kit).
+WARN: 
+
+The version of Rails(5.1.6) and boostrap(4.1.1, maybe 3.3.7) are outdated. And tools are not suitable for use.
+
+If You Want An Scaffold to Build Rails Admin, Please check this [Repo](https://github.com/ElliotCui/admin_start_kit).
 
 Start kit for admin using rails and stellar.
-
-![stellar-admin-login](https://classbox2-files.kechenggezi.com/static/pics/stellar-admin-login.png)
-![stellar-admin](https://classbox2-files.kechenggezi.com/static/pics/stellar-admin.png)
 
 ```sh
   # clone the project
